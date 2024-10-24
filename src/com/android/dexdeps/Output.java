@@ -244,7 +244,7 @@ public class Output {
      * Converts a single-character primitive type into its human-readable
      * equivalent.
      */
-    public static String primitiveTypeLabel(char typeChar) {
+    static String primitiveTypeLabel(char typeChar) {
         /* primitive type; substitute human-readable name in */
         switch (typeChar) {
             case 'B':   return "byte";
@@ -317,7 +317,7 @@ public class Output {
     /**
      * Extracts the class name from a type descriptor.
      */
-    public static String classNameOnly(String typeName) {
+    static String classNameOnly(String typeName) {
         String dotted = descriptorToDot(typeName);
 
         int start = dotted.lastIndexOf(".");

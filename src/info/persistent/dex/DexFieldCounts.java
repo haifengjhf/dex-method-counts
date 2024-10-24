@@ -68,7 +68,7 @@ public class DexFieldCounts extends DexCount {
         }
     }
 
-    private static FieldRef[] getFieldRefs(DexData dexData, Filter filter) {
+    public static FieldRef[] getFieldRefs(DexData dexData, Filter filter) {
         FieldRef[] fieldRefs = dexData.getFieldRefs();
         out.println("Read in " + fieldRefs.length + " field IDs.");
         if (filter == Filter.ALL) {
